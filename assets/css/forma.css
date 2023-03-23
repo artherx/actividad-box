@@ -1,0 +1,68 @@
+:root {
+    --tw-gradient-from: #d1d4d8;
+    --tw-gradient-to: rgba(255, 255, 255, 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: content-box;
+}
+
+.container {
+    width: 100%;
+    background-color: gray;
+    padding: 20px 10px;
+    overflow-x: hidden;
+}
+
+.cajones {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.box {
+    text-align: center;
+    padding: 1.25rem;
+    margin: 2.25rem;
+    background-color: white;
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+#immagenes {
+    display: flex;
+    align-items: center;
+}
+
+#imagenes img {
+    width: 3.75rem;
+}
+#tex {
+    display: flex;
+    justify-content: space-between;
+}  
+
+#num {
+    margin-left: 10px;
+} 
+#num p{
+    background-color: red; 
+    color: white;
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+}
+#texto p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+@media (max-width: 640px) {
+    .cajones {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, minmax(1fr));
+    }
+}
